@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>  
+	<style>    
+		
+		#root {
+			background-image: url('https://raw.githubusercontent.com/TiadorFxCraft/gambar-hosting/main/My%20Neighbor%20Totoro%20in%202024%20_%20Studio%20ghibli%20background%2C%20Ghibli%2C%20Studio%20ghibli%20art%20340.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: relative;
+			overflow-x: hidden;
+			overflow-y: auto;
+			width: 100%;
+			min-height: 100vh;
+			padding-bottom: 50px;
+		}
+		
+		body, html {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			}
+			
+			
+			#loginForm {
+				background-color: rgba(0, 0, 0, 0.6);
+				padding: 20px;
+				border-radius: 10px;
+				width: 100%;
+				max-width: 360px;
+				margin: 170px auto;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				color: white;
+				box-sizing: border-box;
+				}
+			 
+			 .login-header {
+				 text-align: center;
+				 margin-bottom: 20px;
+				}
+			
+			 .login-header h2 {
+				 color: #fff;
+				 font-weight: bold;
+				}
+				
+			.avatar {
+				margin-top: 10px;
+			}
+			
+			.avatar img {
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: #fff;
+				padding: 5px;
+			}
+			
+			#groupInput label {
+				margin: 5px 0 2px;
+				font-size: 14px;
+				color: #ccc;
+				display: block;
+				font-family: 'Orbitron', sans-sarif;
+			}
+			
+			.login-links { 
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				font-size: 12px;
+				color: #ccc;
+				margin-top: 10px;
+			}
+			
+			.login-links a {
+				color: #90ee90;
+				text-decoration: none;
+			}
+			
+			.login-links a:hover {
+				text-decoration: underline;
+			}
+			
+		#root.admin-mode { 
+			background-image: url("https://raw.githubusercontent.com/TiadorFxCraft/gambar-logo/main/dashboard_template_guru.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-size: 1em;
+            text-align: center;
+            min-height: 100vh;
+            padding-top: 0px;
+            display: block;
+           }         
+           
+           #adminDashboard {
+			   background-color: rgba(0, 0, 0, 0.5);
+			   padding: 20px;
+			   border-radius: 10px;
+			   margin: 0 auto;
+			   width: 90%;
+			   max-width: 800px;
+			   box-sizing: border-box;
+			   position: relative;
+			   margin-bottom: 30px;
+			   margin-top: 20px;
+			   min-height: fit-content;
+			   }
+            
+           #table {
+			    margin-top: 10px;
+			    overflow-x: auto;
+			    overflow-y: visible;
+			    width: 100%;
+			    max-width: 100%;
+			    max-height: 400px;
+			}
+			
+			#StyleText {
+				font-size: 24px;
+				font-weight: bold;
+				letter-spacing: 1px;
+				margin-top: 20px;
+				margin-bottom: 15px;
+				color: white;
+				line-height: 1.4;
+			}
+			
+			table {
+				background-color: rgba(255, 255, 255, 0.8);
+				color: black;
+				width: 100%;
+				border-collapse: collapse;
+				border-radius: 8px;
+				overflow-x: hidden;
+			}
+			
+			table th,
+			table td {
+				padding: 12px 8px;
+				text-align: left;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+			}
+			
+			table th {
+				background-color: rgba(0,0,0,0.1);
+				font-weight: bold;
+			}
+	
+			
+			input, button {
+				margin: 10px 5px;
+			}
+			
+			#groupInput {
+				padding: 10px;
+				margin: 50px;
+			}
+			
+			
+			
+
+			#loginButton {
+				background: #4a6bff;
+				  border: none;
+				  color: white;
+				  padding: 14px 32px;
+				  font-size: 16px;
+				  font-weight: bold;
+				  border-radius: 12px;
+				  cursor: pointer;
+				  box-shadow: 0 6px 0 #3a56d4, 0 8px 10px rgba(0, 0, 0, 0.2);
+				  transition: all 0.1s ease;
+				  position: relative;
+				  top: 0;
+				  margin: 60px;
+			}
+			
+			#adminlogoutButton {
+				background: #4a6bff;
+				  border: none;
+				  color: white;
+				  padding: 14px 32px;
+				  font-size: 16px;
+				  font-weight: bold;
+				  border-radius: 12px;
+				  cursor: pointer;
+				  box-shadow: 0 6px 0 #3a56d4, 0 8px 10px rgba(0, 0, 0, 0.2);
+				  transition: all 0.1s ease;
+				  position: relative;
+				  top: 0;
+			}
+			
+			#adminlogoutButton:hover {
+				background: #3f5ef7;
+			}
+			
+			#adminlogoutButton:active {
+				top: 4px;
+				box-shadow: 0 2px 0 #3a56d4, 0 3px 5px rgba(0, 0, 0, 0.2);
+			}
+			
+		
+			#loginButton:hover   {
+				opacity: 0.6; 
+				transform: scale(1.13);
+			}
+			
+			@media (max-width: 768px) {
+			       #adminDashboard{
+					       width: 95%;
+					       padding: 15px;			   
+					}
+					
+					#styleText {
+						font-size: 20px;
+					}
+					
+					#table {
+						font-size: 14px;
+					}
+					
+					table th,
+					table td {
+						padding: 8px 4px;
+					}
+				}
+				
+				* {
+					   scroll-behavior: smooth;
+				}
+				
+				
+				#root.basicDashboard {
+					background-image: url('https://raw.githubusercontent.com/TiadorFxCraft/gambar-tabelio/main/WhatsApp%20Image%202025-06-19%20at%2014.42.54.png');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+					background-attachment: fixed;
+				} 
+             
+             #basicDashboard,
+             #classStatistics {
+				      display: none;
+				 }
+             
+             
+             .caption-style3 {
+				 color: #90ee90;
+				 font-size: 20px;
+				 font-weight: bold;
+				 text-align: center;
+				 margin-bottom: 20px;
+				 padding: 15px;
+				 text-shadow:
+				 0 0 5px #90ee90,
+				 0 0 10px #90ee90,
+				 0 0 2px #90ee90;
+				 border: 2px solid #90ee90;
+				 border-radius: 10px;
+				 background: rgba(0, 255, 255, 0.05);
+				 margin-top: 20px;
+				}
+				
+				
+				.besti-style3 {
+				 color: #90ee90;
+				 font-size: 20px;
+				 font-weight: bold;
+				 text-align: center;
+				 margin-bottom: 20px;
+				 padding: 15px;
+				 text-shadow:
+				 0 0 5px #90ee90,
+				 0 0 10px #90ee90,
+				 0 0 2px #90ee90;
+				 border: 2px solid #90ee90;
+				 border-radius: 10px;
+				 background: rgba(0, 255, 255, 0.05);
+				 width: 100%;
+				 table-layout: fixed;
+				}
+				
+              #basiclogoutButton {
+				  background: #4a6bff;
+				  border: none;
+				  color: white;
+				  padding: 14px 32px;
+				  font-size: 16px;
+				  font-weight: bold;
+				  border-radius: 12px;
+				  cursor: pointer;
+				  box-shadow: 0 6px 0 #3a56d4, 0 8px 10px rgba(0, 0, 0, 0.2);
+				  transition: all 0.1s ease;
+				  position: relative;
+				  top: 0;
+			}
+			
+			#basiclogoutButton:hover {
+				background: #3f5ef7;
+			}
+			
+			#basiclogoutButton:active {
+				top: 4px;
+				box-shadow: 0 2px 0 #3a56d4, 0 3px 5px rgba(0, 0, 0, 0.2);
+			}
+
+			#ayowpa {
+				font-size: 24px;
+				font-weight: bold;
+				letter-spacing: 1px;
+				margin-top: 20px;
+				margin-bottom: 15px;
+				color: white;
+				line-height: 1.4;
+				text-align: center;
+			}
+             
+             .roaster-toggle {
+				display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-left: 10px;
+                color: #90ee90;
+                font-weight: bold;
+                cursor: default;
+                margin-top: 10px;
+				 }
+				 
+			.roaster-title {
+				margin-bottom: 10px;
+                font-size: 18px;
+                color: white;
+                margin-left: 90px;
+			}
+				 
+			.roaster-header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 20px;
+				padding: 12px 20px;
+				background-color: rgba(0, 0, 0, 0.5);
+				color: white;
+				font-weight: bold;
+				border-radius: 10px;
+			}
+				 
+             .roaster-list {
+            display: none;
+            background-color: rgba(255,255,255,0.1);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-top: 10px;
+            padding: 10px;
+            color: white;
+            }
+             
+            .chevron.rotate {
+             transform: rotate(90deg);
+             transition: transform 0.3s ease;
+             margin-right: 20px;
+             }
+            
+             .chevron {
+				 font-size: 24px;
+				 color: Yellow;
+				 transition: transform 0.3s ease;
+				 margin-left: 5px;
+				 cursor: pointer;
+			}
+			
+			.roaster-list table {
+				width: 100%;
+				border-collapse: collapse;
+				background-color: white;
+				color: black;
+				font-family: Poppins, sans-serif;
+			}
+			
+			.roaster-list th,
+			.roaster-list td {
+				border: 1px solid rgba(255, 255, 255,0.3);
+				padding: 8px 10px;
+				text-align: left;
+			}
+			
+             #root.superadminDashboard {
+				 background-image: url('https://raw.githubusercontent.com/TiadorFxCraft/Ruang-satpam/main/NamaruangSatpam.png');
+				 background-size: cover;
+				 background-repeat: no-repeat;
+				 background-position: center;
+				 background-attachment: fixed;
+			}
+
+			 #superadminDashboard {
+               background-color: rgba(0, 0, 0, 0.7);
+			   padding: 30px;
+			   border-radius: 15px;
+			   margin: 20px;
+			   color:white;
+			   font-family: 'Poppins', sans-serif;
+			 }
+
+		      #superadminlogoutButton {
+				background: #4a6bff;
+				  border: none;
+				  color: white;
+				  padding: 14px 32px;
+				  font-size: 16px;
+				  font-weight: bold;
+				  border-radius: 12px;
+				  cursor: pointer;
+				  box-shadow: 0 6px 0 #3a56d4, 0 8px 10px rgba(0, 0, 0, 0.2);
+				  transition: all 0.1s ease;
+				  position: relative;
+				  top: 0;
+			  }
+
+			   #superadminlogoutButton:hover {
+				background: #3f5ef7;
+			}
+			
+			#superadminlogoutButton:active {
+				top: 4px;
+				box-shadow: 0 2px 0 #3a56d4, 0 3px 5px rgba(0, 0, 0, 0.2);
+			}
+             
+            #thsatpam1 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.9);
+				backdrop-filter: blur(4px);
+			}
+
+			#thsatpam2 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.9);
+				backdrop-filter: blur(4px);
+			}
+
+			#thsatpam3 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.9);
+				backdrop-filter: blur(4px);
+			}
+
+			#thsatpam4 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.9);
+				backdrop-filter: blur(4px);
+			}
+
+			#thsatpam5 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.9);
+				backdrop-filter: blur(4px);
+			}
+
+			#tdsatpam1 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam2 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam3 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam4 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam5 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam6 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam7 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam8 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam9 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam10 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam11 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam12 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam13 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam14 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam15 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#tdsatpam16 {
+				color: white;
+				background-color: rgba(204, 204, 204, 0.4);
+			}
+
+			#zonasatpam {
+				font-size: 24px;
+				font-weight: bold;
+				letter-spacing: 1px;
+				margin-top: 20px;
+				margin-bottom: 15px;
+				color: white;
+				line-height: 1.4;
+				text-align: center;
+			}
+
+		
+
+
+
+
+	</style>
+	<body>
+		<!-- INI KONTEN KITA -->
+		  
+            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+		    <div id="root">
+				
+			<div id="loginForm">
+				<div class="login-header">
+					<h2>This Form Was made by<br>TiadorFexe</h2>
+					<div class="avatar">
+					<img src="https://i.pinimg.com/736x/dc/bc/8d/dcbc8d75ef5b3fe7f2112cd52d95d137.jpg" alt="avatar" />
+					</div>
+				</div>
+				
+				
+			<div id="groupInput">	
+			<label for="usernameInput" id="userLabelnya">Username You;)</label>
+			<input type="text" placeholder="Username" id="usernameInput" />
+			<label for="passwordInput" id="Passwordlabelnya">Password You;)</label>
+			<input type="password" placeholder="password" id="passwordInput" />
+			</div>
+			
+			<button onclick="onLogout()" id="adminlogoutButton" style="display: none;">LOGOUT</button>
+			<button onclick="onLogout()" id="basiclogoutButton" style="display: none;">LOGOUT</button>
+			<button onclick="onLogout()" id="superadminlogoutButton" style="display: none;">LOGOUT</button>
+			
+			<div id="groupButton">
+			<button onclick="onLogin()" id="loginButton">LOGIN</button>
+			<button onclick="showRegister()" id="registerButton">Register</button>
+			<div id="registerSection" style="display: none;  margin-top: 20px;">
+			<h2>Form Registrasi</h2>
+			<input type="text" id="regUsername" placeholder="Username"><br>
+			<input type="password" id="regPassword" placeholder="Password"><br>
+			<select id="regRole">
+				<option value="">Pilih Role</option>
+				<option value="admin">Admin</option>
+				<option value="basic">Basic</option>
+				<option value="superadmin">Superadmin</option>
+			</select></br>
+			<button onclick="submitRegister()">Submit Register</button>
+			</div>
+			</div>
+			</div>
+			
+			
+			<div id="StyleText" style="display: none;">
+			<p>Disini Dashboard Guru.(fitur Guru)</p>
+			</div>
+			
+			<div id="adminDashboard" style="display: none;">
+			<p class="besti-style3">
+				!Penghargaan!
+            <br>Hasil Data Nilai Champion Siswa
+            </p>
+			<button onclick="onLogout()" id="adminlogoutButton" style="display: none;">LOGOUT</button>
+			
+			
+			<div id="table">
+			<table class="table">
+            <thead>
+            <tr>
+            <th scope="col">Jumlah Sswa</th>
+            <th scope="col">Nama Siswa</th>
+            <th scope="col">Ttng Tugas</th>
+            <th scope="col">Nilai</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Ani</td>
+            <td>PAI</td>
+            <td>100</td>
+            </tr>
+            <tr> 
+            <th scope="row">2</th>
+            <td>Fajar</td>
+            <td>Sains</td>
+            <td>100</td>
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Fitri</td>
+            <td>Fisika</td>
+            <td>100 </td>
+            </tr>
+            <tr>
+			<th scope="row">4</th>
+            <td>Arman
+            </td>
+            <td>Bahasa Inggris</td>
+            <td>100</td>
+            </tr>
+            <tr> 
+            <th scope="row">5</th>
+            <td>Etong</td>
+            <td>Sejarah</td>
+            <td>100</td>
+            </tr>
+            <tr>
+            <th scope="row">6</th>
+            <td>Supri</td>
+            <td>Biologi</td>
+            <td>100 </td>
+            </tr>
+            <tr>
+            <th scope="row">7</th>
+            <td>Faiz</td>
+            <td>Bahasa Arab</td>
+            <td>100</td>
+            </tr>
+            </tbody>
+            </table>
+            </div>
+			</div> 
+			
+			<div id="classStatistics">
+			     <table>
+                 <thead>
+                 <tr>
+				 <p class="caption-style3">
+                 Form BioData Guru SMP 7 Yayasan Sulawesi Barat
+                 </p>
+                 <th>No</th>
+                 <th>NIP</th>
+                 <th>Tahun Masuk</th>
+				 </tr>
+				 </thead>
+				 <tbody>
+				 <tr>
+				 <td>Budi Santoso</td>
+				 <td>198512312019031002</td>
+				 <td>2017</td>
+				 </tr>
+				 <tr>
+				 <td>Siti Rahmawati</td>
+				 <td>197902152017081001</td>
+				 <td>2019</td>
+				 </tr>
+				  <tr>
+				 <td>Andi Pratama</td>
+				 <td>198811112018042003</td>
+				 <td>2018</td>
+				 </tr>
+				 <tr>
+				 <td>Andi Aspekul</td>
+				 <td>198806682014042003</td>
+				 <td>2018</td>
+				 </tr>
+				 <tr>
+				 <td>Marejurnal Fian</td>
+				 <td>198888882018040144</td>
+				 <td>2018</td>
+				 </tr>
+				 </tbody>
+				 </table>
+			     </div>
+			
+			
+			<p id="ayowpa" style="color: white;">disini Dashboard Murid,,(fitur murid)</p>
+			<div id="basicDashboard" style="display: none;">
+			<div class="container">
+			</div>
+			<div class="roaster-header" onclick="toggleRoaster()">
+            <span class="roaster-title">
+            Roaster Jadwal Pembelajaran Murid SMP Ketupat 7 Yayasan Sulawesi Barat
+            </span>
+            <span id="chevron" class="chevron">&#9654;</span>
+            </div>
+
+           <div id="roasterList" class="roaster-list">
+           <table>
+           <thead>	   
+           <tr>
+			   <th>Hari</th>
+			   <th>Mata Pelajaran</th>
+			   <th>Waktu</th>
+			   <th>Pengaws</th>
+			   <th></th>
+           </tr>
+           </thead>
+           <tbody>
+			   <tr>
+				   <td rowspan="3">Senin</td>
+				   <td>Matematika</td>
+				   <td rowspan="3">06:10 11:40</td>
+				   <td rowspan="3">Franco S.pd</td>
+			   </tr>
+			   <tr><td>Bahasa Indonesia</td></tr>
+			   <tr><td>IPA</td></tr>
+			   
+			   <tr>
+				   <td rowspan="3">Selasa</td>
+				   <td>IPS</td>
+				   <td rowspan="3">07:20 11:40</td>
+				   <td rowspan="3">Lyla.S.pd</td>
+				</tr>
+				<tr><td>Seni Budaya</td></tr>
+				<tr><td>Penjaskes</td></tr>
+				
+				<tr>
+					<td rowspan="3">Rabu</td>
+					<td>Bahasa Inggris</td>
+					<td rowspan="3">07:20 11:40</td>
+					<td rowspan="3">Clint.P.Pd</td>
+				</tr>
+				<tr><td>PKN</td></tr>
+				<tr><td>Prakarya</td></tr>
+				
+				<tr>
+				<td rowspan="3">Kamis</td>
+				<td>Agama</td>
+				<td rowspan="3">07:20 11:40</td>
+				<td rowspan="3">Yi Sun shin.Spd</td>
+				</tr>
+				<tr><td>Bahasa Daerah</td></tr>
+				<tr><td>TIK</td></tr>
+				
+				
+				<tr>
+					<td rowspan="3">Jumat</td>
+					<td>Kegiatan Keagamaan</td>
+					<td rowspan="3">07:00 10:30</td>
+					<td rowspan="3">Alu.S.Pd</td>
+				</tr>
+				<tr><td>Ekstrakurikuler</td></tr>
+				<tr><td>BCQ</td></tr>
+				</tbody>
+			   </table>
+           </div>
+			<div>
+			
+			<button onclick="onLogout()" id="basiclogoutButton" style="display: none;">LOGOUT</button>
+			</div>
+			</div>
+
+            <p id="zonasatpam">Disini Dashboard Satpam.(fitur satpam)</p>
+			<div id="superadminDashboard" style="display: none;">	
+			<button onclick="onLogout()" id="superadminlogoutButton" style="display: none;">LOGOUT</button>
+			<div id="tablecctv1satpam" style="margin-bottom: 30px;">
+			<table style="width:100%;">
+				<tr>
+					<th>Jum Angt</th>
+					<th>Nama Angt</th>
+					<th>Shift</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Ma Aruf Anto</td>
+					<td>Pagi</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Azazil Geza</td>
+					<td>Siang</td>
+				</tr>
+				<td>3</td>
+				<td>Rasya Khasa</td>
+				<td>Malam</td>
+			</table>
+		    </div>
+
+            <table>
+				<thead>
+					<tr>
+						<th id="thsatpam1">No</th>
+					 	<th id="thsatpam2">Ruangan</th>
+						<th id="thsatpam3">(Bukti) Foto CCTV</th>
+						<th id="thsatpam4">Waktu Bukti</th>
+						<th id="thsatpam5">Cacatan</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="tdsatpam1">1</td>
+						<td id="tdsatpam2">Ruangan A</td>
+						<td style="background-color: rgba(204, 204, 204, 0.4)"><img src="https://st5.depositphotos.com/2860187/76773/i/450/depositphotos_767739294-stock-photo-college-class-equipment-furniture-empty.jpg" style="width: 190px; height: auto;"></td>
+						<td id="tdsatpam3">1/13/2014-7/19/2025</td>
+						<td id="tdsatpam4">Aman,,Gak Ada Alomani</td>
+					</tr>
+				</tbody>
+				<tr>
+					<td id="tdsatpam5">2</td>
+					<td id="tdsatpam6">Ruangan B</td>
+					<td style="background-color: rgba(204, 204, 204, 0.4)"><img src="https://www.klopmart.com/kcfinder/upload/images/Pahami%20Aturan%20Sekolah.jpg" style="width: 190px; height: auto;"></td>
+					<td id="tdsatpam7">1/13/2014-7/19/2025</td>
+					<td id="tdsatpam8">Aman,,Gak Ada Alomani</td>
+				</tr>
+			</tbody>
+			<tr>
+				<td id="tdsatpam9">3</td>
+				<td id="tdsatpam10">Luar Ruangan Sat</td>
+				<td style="background-color: rgba(204, 204, 204, 0.4)"><img src="https://edumasterprivat.com/wp-content/uploads/2022/01/sekolah-internasional-terbaik.jpg" style="width: 190px; height: auto;"></td>
+				<td id="tdsatpam11">1/13/2014-7/19/2025</td>
+				<td id="tdsatpam12">Aman,,Gak Ada Anomali</td>
+			</tr>
+		</tbody>
+		<tr>
+			<td id="tdsatpam13">4</td>
+			<td id="tdsatpam14">Parkiran</td>
+			<td style="background-color: rgba(204, 204, 204, 0.4)"><img src="https://thumbs.dreamstime.com/b/empty-school-parking-lot-due-coronavirus-shut-down-183955874.jpg" style="width: 190px; height: auto;"></td>
+			<td id="tdsatpam15">1/13/2014-7/19/2025</td>
+			<td id="tdsatpam16">Aman,,Gak Ada Anomali</td>
+		</tr>
+
+			
+			
+                   
+	    																						
+		
+		<script type="application/javascript">
+
+			function showRegister() {
+            const form = document.getElementById("registerSection");
+			form.style.display = form.style.display === "none" ? "block" : "none";
+			}
+
+			function submitRegister() {
+            const username = document.getElementById("regUsername").value;
+            const password = document.getElementById("regPassword").value;
+            const role = document.getElementById("regRole").value;
+
+            if (!username || !password || !role) {
+            alert("Semua data harus diisi!");
+            return;
+            }
+
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+
+            const existingUser = users.find(u => u.username === username);
+            if (existingUser) {
+            alert("Username sudah terdaftar!");
+            return;
+            }
+
+            users.push({ username, password, role });
+            localStorage.setItem("users", JSON.stringify(users));
+            alert("Pendaftaran berhasil! Silakan login.");
+
+            document.getElementById("registerSection").style.display = "none";
+			document.getElementById("regUsername").value = "";
+			document.getElementById("regPassword").value = "";
+			document.getElementById("regRole").value = "";
+
+            }
+		
+			window.onload = function() {
+				
+				const registerButton = document.getElementById('registerButton');
+                const tablecctv1satpam = document.getElementById('tablecctv1satpam');
+				const zonasatpam = document.getElementById('zonasatpam');
+				const ayowpa = document.getElementById('ayowpa');
+				const adminlogoutButton = document.getElementById('adminlogoutButton');
+				const basiclogoutButton = document.getElementById('basiclogoutButton');
+				const superadminlogoutButton = document.getElementById('superadminlogoutButton');
+				const classStatistics = document.getElementById('classStatistics');
+				const userLabelnya = document.getElementById('userLabelnya');
+				const Passwordlabelnya = document.getElementById('Passwordlabelnya');
+			    const usernameInput = document.getElementById('usernameInput');
+			    const passwordInput = document.getElementById('passwordInput');
+			    const loginButton = document.getElementById('loginButton');
+			    const basicDashboard = document.getElementById('basicDashboard');
+			    const superadminDashboard = document.getElementById('superadminDashboard');
+			    const adminDashboard = document.getElementById('adminDashboard');
+			    const StyleText = document.getElementById('StyleText');
+			    const root = document.getElementById('root');
+			    
+			
+			if (!adminlogoutButton || !basiclogoutButton || !superadminlogoutButton || !loginButton || !usernameInput || !passwordInput || !basicDashboard || !superadminDashboard || !adminDashboard || !StyleText || !classStatistics || !userLabelnya || !Passwordlabelnya || !ayowpa || !zonasatpam || !tablecctv1satpam || !registerButton) {
+				console.error("Elemen DOM tidak ditemukan!"); 
+				return;
+				}  
+				
+				loginButton.addEventListener('click', onLogin);
+			
+			    const role = localStorage.getItem('role');
+			if (!localStorage.getItem('username')) {
+				registerButton.style.display = "block";
+				tablecctv1satpam.style.display = "none";
+				zonasatpam.style.display = "none";
+				ayowpa.style.display = "none";
+			    adminlogoutButton.style.display = "none";
+			    basiclogoutButton.style.display = "none";
+			    superadminlogoutButton.style.display = "none";
+			    basicDashboard.style.display = "none";
+			    adminDashboard.style.display = "none";
+			    superadminDashboard.style.display = "none";
+			    classStatistics.style.display = "none";
+			    StyleText.style.display = "none";
+			    userLabelnya.style.display = "block";
+			    Passwordlabelnya.style.display = "block";
+			    root.className = '';
+		       } else if (role === "admin") {
+				   registerButton.style.display = "none";
+				   tablecctv1satpam.style.display = "none";
+				   zonasatpam.style.display = "none";
+				   ayowpa.style.display = "none";
+				   adminlogoutButton.style.display = "block";
+				   basiclogoutButton.style.display = "none";
+				   superadminlogoutButton.style.display = "none";
+				   root.className = 'admin-mode';
+				   adminDashboard.style.display = "block";
+				   basicDashboard.style.display = "none";
+				   superadminDashboard.style.display = "none";
+				   classStatistics.style.display = "block";
+				   StyleText.style.display = "block";
+				   userLabelnya.style.display = "none";
+				   Passwordlabelnya.style.display = "none";
+			} else if  (role === "superadmin") {
+				root.className = 'superadminDashboard';
+				registerButton.style.display = "none";
+				tablecctv1satpam.style.display = "block";
+				zonasatpam.style.display = "block";
+				ayowpa.style.display = "none";
+				adminlogoutButton.style.display = "none";
+				basiclogoutButton.style.display = "none";
+				superadminlogoutButton.style.display = "block";
+				adminDashboard.style.display = "none";
+				basicDashboard.style.display = "none";
+				superadminDashboard.style.display = "block";
+				classStatistics.style.display = "none";
+				StyleText.style.display = "none";
+				userLabelnya.style.display = "none";
+				Passwordlabelnya.style.display = "none";
+			} else {
+			   registerButton.style.display = "none";
+			   tablecctv1satpam.style.display = "none";
+			   zonasatpam.style.display = "none";
+			   ayowpa.style.display = "block";
+			   adminlogoutButton.style.display = "none";
+			   basiclogoutButton.style.display = "block";
+			   superadminlogoutButton.style.display = "none";
+			   root.className = 'basicDashboard';
+			   adminDashboard.style.display = "none";
+			   basicDashboard.style.display = "block";
+			   superadminDashboard.style.display = "none";
+			   classStatistics.style.display = "none";
+			   StyleText.style.display = "none";
+			   userLabelnya.style.display = "none";
+			   Passwordlabelnya.style.display = "none";
+		   }
+		   console.log('Class di #root:', root.className);
+		};
+		    
+			let usernameInput = document.getElementById('usernameInput');
+			let passwordInput = document.getElementById('passwordInput');
+			let loginButton = document.getElementById('loginButton');
+			let basicDashboard = document.getElementById('basicDashboard');
+			let superadminDashboard = document.getElementById('superadminDashboard');
+			let adminDashboard = document.getElementById('adminDashboard');
+			
+			
+			function hideAllDashboard(){
+
+			const registerButton = document.getElementById('registerButton');
+			const tablecctv1satpam = document.getElementById('tablecctv1satpam');
+			const zonasatpam = document.getElementById('zonasatpam');
+			const ayowpa = document.getElementById('ayowpa');
+			const adminlogoutButton = document.getElementById('adminlogoutButton');
+			const basiclogoutButton = document.getElementById('basiclogoutButton');
+			const superadminlogoutButton = document.getElementById('superadminlogoutButton');
+			const classStatistics = document.getElementById('classStatistics');
+			const StyleText = document.getElementById('StyleText');
+			const userLabelnya = document.getElementById('userLabelnya');
+			const Passwordlabelnya = document.getElementById('Passwordlabelnya');
+			const basicDashboard = document.getElementById('basicDashboard');
+			const superadminDashboard = document.getElementById('superadminDashboard');
+			const adminDashboard = document.getElementById('adminDashboard');
+			const root = document.getElementById('root');
+			adminDashboard.style.display = "none";
+			basicDashboard.style.display = "none";
+			superadminDashboard.style.display = "none";
+			adminlogoutButton.style.display = "none";
+			basiclogoutButton.style.display = "none";
+			superadminlogoutButton.style.display = "none";
+			classStatistics.style.display = "none";
+			StyleText.style.display = "none";
+			userLabelnya.style.display = "none";
+			Passwordlabelnya.style.display = "none";
+			root.className = '';
+		    }
+			
+			
+		  function onLogin() {
+			   
+			   const username = document.getElementById("usernameInput").value;
+			   const password = document.getElementById("passwordInput").value;
+			   
+			  let users = JSON.parse(localStorage.getItem("users")) || []
+
+			  const user = users.find(u => u.username === username && u.password === password);
+
+			  if (!user) {
+				alert("Username atau Password salah / belum terdaftar!");
+				return;
+			  }
+
+			  localStorage.setItem("username", user.username);
+			  localStorage.setItem("role", user.role);
+
+			  location.reload();
+			  
+			  
+		 }
+			
+   
+	   
+	   if(localStorage.getItem('username')) { 
+		   usernameInput.style.display = "none";
+		   passwordInput.style.display = "none";
+		   loginButton.style.display = "none";
+		   ayowpa.style.display = "none";
+		   zonasatpam.style.display = "none";
+
+		   
+		   if(localStorage.getItem('role') == "admin"){
+			   document.getElementById('root').classList.add("admin-mode");
+			   document.getElementById('adminlogoutButton').style.display = "block"; 
+			  basicDashboard.style.display = "none";
+			  adminDashboard.style.display = "block"
+			  superadminDashboard.style.display = "none";
+			  
+			} else if(localStorage.getItem('role') == "superadmin") {
+				document.getElementById('root').classList.add("superadminDashboard");
+				document.getElementById('superadminlogoutButton').style.display = "block";
+				document.getElementById('zonasatpam').style.display = "block";
+				basicDashboard.style.display = "none";
+				adminDashboard.style.display = "none";
+				superadminDashboard.style.display = "block";
+
+		    }else {
+			  adminDashboard.style.display = "none";
+			  basicDashboard.style.display = "block";
+			  superadminDashboard.style.display = "none";
+		  }
+	  }
+	
+		   
+		   function onLogout() {
+			 localStorage.clear();
+			 location.reload();
+			   }
+			   
+			   
+			   function toggleRoaster() {
+				     const list = document.getElementById('roasterList');
+				     const chevron = document.getElementById('chevron');
+				     
+				     if (list.style.display === "none" || list.style.display === "") {
+						 list.style.display = "block";
+						 chevron.classList.add("rotate");				 
+				    } else {
+						list.style.display = "none";
+						chevron.classList.remove("rotate");
+					}
+					}
+		</script>
+	</body>
+</html>
